@@ -14,7 +14,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = "http://localhost:5000/tasks"
+  private apiUrl = "https://ill-puce-hippopotamus-hose.cyclic.app/tasks"
 
   constructor(private http: HttpClient) { }
 

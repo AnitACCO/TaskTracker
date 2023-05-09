@@ -26,4 +26,17 @@ describe('ButtonComponent', () => {
     component.onClick();
     expect(spy).toHaveBeenCalled();
   })
+
+  it('should set color', () => {
+    component.color = 'blue';
+    fixture.detectChanges();
+    expect(component.color).toBe('blue');
+  });
+
+  it('should set text', () => {
+    component.text = 'hello';
+    fixture.detectChanges();
+    expect(component.text).toBe('hello');
+  });
+
 });
